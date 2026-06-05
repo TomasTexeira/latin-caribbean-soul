@@ -24,18 +24,18 @@ const PERFECT_FOR_IMAGES: string[] = [
   "/images/lifestyle/resort-aerial.jpg", // Seasonal Buyouts
 ];
 
-// Concept index -> image (null = navy editorial block)
-const CONCEPT_IMAGES: (string | null)[] = [
+// Concept index -> image
+const CONCEPT_IMAGES: string[] = [
   "/images/property-or-experience.png", // BBQ Under the Stars
   "/images/dia-de-muertos.png", // Día de los Muertos
   "/images/dinner-rainforest.png", // Dinner in the Rainforest
-  null, // Latin Dancing Lessons
+  "/images/lifestyle/latin-dancing.jpg", // Latin Dancing Lessons
   "/images/seafood-festival.png", // Seafood Festival
   "/images/caribbean-carnival.png", // Caribbean Carnival
   "/images/acoustic-vibes.png", // Acoustic Vibes
 ];
 
-const PROPERTY_IMAGES: (string | null)[] = [
+const PROPERTY_IMAGES: string[] = [
   "/images/lifestyle/resort-aerial.jpg", // Waldorf Astoria — resort aerial
   "/images/conrad-tulum.png", // Conrad Tulum
 ];
@@ -77,12 +77,12 @@ export default async function Home({
       <header className="sticky top-0 z-50 border-b border-hairline bg-white/90 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-4 sm:px-10">
           <Image
-            src="/images/hilton-logo.png"
+            src="/images/logos/hilton-mark.png"
             alt="Hilton — For the Stay"
-            width={829}
-            height={156}
+            width={189}
+            height={136}
             priority
-            className="h-8 w-auto shrink-0 sm:h-10"
+            className="h-9 w-auto shrink-0 sm:h-11"
           />
           <div className="flex items-center gap-4 sm:gap-5">
             <LanguageSwitcher current={lang} variant="dark" />
@@ -105,8 +105,9 @@ export default async function Home({
               alt=""
               fill
               priority
+              quality={90}
               sizes="100vw"
-              className="object-cover"
+              className="object-cover object-center"
             />
           </ZoomBg>
           <div className="absolute inset-0 bg-gradient-to-b from-navy-deep/70 via-navy-deep/45 to-navy-deep/80" />
@@ -143,13 +144,13 @@ export default async function Home({
         </section>
 
         {/* For the Stay banner */}
-        <Reveal className="bg-navy">
+        <Reveal className="bg-navy py-10 sm:py-12">
           <Image
-            src="/images/for-the-stay-banner.png"
+            src="/images/logos/for-the-stay-script.png"
             alt="For the Stay"
-            width={829}
-            height={113}
-            className="mx-auto h-auto w-full max-w-3xl"
+            width={219}
+            height={81}
+            className="mx-auto h-16 w-auto sm:h-20"
           />
         </Reveal>
 
@@ -231,8 +232,9 @@ export default async function Home({
                   src={PERFECT_FOR_IMAGES[i]}
                   alt={item}
                   fill
-                  sizes="(max-width: 768px) 50vw, 20vw"
-                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                  quality={90}
+                  sizes="(min-width: 768px) 20vw, 50vw"
+                  className="object-cover object-center transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-navy-deep/85 via-navy-deep/30 to-navy-deep/10 transition-all duration-500 group-hover:from-navy-deep/95" />
                 <span className="relative z-10 block w-full p-5 font-serif text-lg leading-tight text-white sm:text-xl">
@@ -256,47 +258,30 @@ export default async function Home({
               </p>
             </Reveal>
             <Stagger className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-              {t.concepts.items.map((c, i) => {
-                const img = CONCEPT_IMAGES[i];
-                const wide = i === 0;
-                return (
-                  <StaggerItem
-                    key={c}
-                    className={`group relative flex h-full items-end overflow-hidden rounded-2xl ${
-                      wide ? "sm:col-span-2 min-h-72 sm:min-h-80" : "min-h-64"
-                    } ${img ? "" : "bg-navy"}`}
-                  >
-                    {img && (
-                      <>
-                        <Image
-                          src={img}
-                          alt={c}
-                          fill
-                          sizes={
-                            wide
-                              ? "(max-width: 1024px) 100vw, 66vw"
-                              : "(max-width: 1024px) 100vw, 33vw"
-                          }
-                          className="object-cover transition-transform duration-700 group-hover:scale-105"
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent transition-all duration-500 group-hover:from-black/85" />
-                      </>
-                    )}
-                    <div className="relative z-10 p-7">
-                      <span
-                        className={`text-xs uppercase tracking-[0.22em] ${
-                          img ? "text-white/70" : "text-terracotta"
-                        }`}
-                      >
-                        {String(i + 1).padStart(2, "0")}
-                      </span>
-                      <h3 className="mt-2 font-serif text-2xl font-medium leading-tight text-white sm:text-3xl">
-                        {c}
-                      </h3>
-                    </div>
-                  </StaggerItem>
-                );
-              })}
+              {t.concepts.items.map((c, i) => (
+                <StaggerItem
+                  key={c}
+                  className="group relative aspect-[4/5] overflow-hidden rounded-2xl"
+                >
+                  <Image
+                    src={CONCEPT_IMAGES[i] as string}
+                    alt={c}
+                    fill
+                    quality={90}
+                    sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                    className="object-cover object-center transition-transform duration-700 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-transparent transition-all duration-500 group-hover:from-black/90" />
+                  <div className="absolute inset-x-0 bottom-0 p-6">
+                    <span className="text-xs uppercase tracking-[0.22em] text-white/70">
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
+                    <h3 className="mt-2 font-serif text-2xl font-medium leading-tight text-white sm:text-3xl">
+                      {c}
+                    </h3>
+                  </div>
+                </StaggerItem>
+              ))}
             </Stagger>
           </div>
         </section>
@@ -350,8 +335,9 @@ export default async function Home({
             src="/images/lifestyle/zemi-poolside.png"
             alt=""
             fill
+            quality={90}
             sizes="100vw"
-            className="object-cover"
+            className="object-cover object-center"
           />
           <div className="absolute inset-0 bg-navy-deep/55" />
           <Reveal className="relative z-10 mx-auto w-full max-w-6xl px-6 py-24 text-center sm:px-10">
@@ -397,42 +383,31 @@ export default async function Home({
             </h2>
           </Reveal>
           <Stagger className="mt-14 grid gap-8 md:grid-cols-2">
-            {t.properties.items.map((p, i) => {
-              const img = PROPERTY_IMAGES[i];
-              return (
-                <StaggerItem
-                  key={p.name}
-                  className={`group relative overflow-hidden rounded-2xl ${
-                    img ? "" : "bg-navy"
-                  }`}
-                >
-                  <div className="relative aspect-[4/5] w-full sm:aspect-[3/4]">
-                    {img ? (
-                      <>
-                        <Image
-                          src={img}
-                          alt={p.name}
-                          fill
-                          sizes="(max-width: 768px) 100vw, 50vw"
-                          className="object-cover transition-transform duration-700 group-hover:scale-105"
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
-                      </>
-                    ) : (
-                      <div className="absolute inset-0 bg-gradient-to-br from-navy to-navy-deep" />
-                    )}
-                  </div>
-                  <div className="absolute inset-x-0 bottom-0 p-8">
-                    <p className="text-xs uppercase tracking-[0.2em] text-white/70">
-                      {p.location}
-                    </p>
-                    <h3 className="mt-2 font-serif text-3xl font-medium text-white">
-                      {p.name}
-                    </h3>
-                  </div>
-                </StaggerItem>
-              );
-            })}
+            {t.properties.items.map((p, i) => (
+              <StaggerItem
+                key={p.name}
+                className="group overflow-hidden rounded-2xl border border-hairline bg-white"
+              >
+                <div className="relative aspect-[4/3] w-full overflow-hidden">
+                  <Image
+                    src={PROPERTY_IMAGES[i]}
+                    alt={p.name}
+                    fill
+                    quality={90}
+                    sizes="(min-width: 768px) 50vw, 100vw"
+                    className="object-cover object-center transition-transform duration-700 group-hover:scale-105"
+                  />
+                </div>
+                <div className="p-8">
+                  <p className="text-xs uppercase tracking-[0.2em] text-terracotta">
+                    {p.location}
+                  </p>
+                  <h3 className="mt-2 font-serif text-3xl font-medium text-navy">
+                    {p.name}
+                  </h3>
+                </div>
+              </StaggerItem>
+            ))}
           </Stagger>
         </section>
 
@@ -442,8 +417,9 @@ export default async function Home({
             src={CONTACT_IMG}
             alt=""
             fill
+            quality={90}
             sizes="100vw"
-            className="object-cover"
+            className="object-cover object-center"
           />
           <div className="absolute inset-0 bg-navy-deep/85" />
           <Reveal className="relative z-10 mx-auto max-w-6xl px-6 py-24 text-center text-white sm:px-10 sm:py-32">
@@ -471,11 +447,11 @@ export default async function Home({
           <div className="flex flex-col gap-8 md:flex-row md:items-end md:justify-between">
             <div>
               <Image
-                src="/images/hilton-logo.png"
+                src="/images/logos/hilton-mark-white.png"
                 alt="Hilton — For the Stay"
-                width={829}
-                height={156}
-                className="h-12 w-auto rounded bg-white px-3 py-1"
+                width={189}
+                height={136}
+                className="h-14 w-auto"
               />
               <p className="mt-4 font-serif text-lg italic text-white/70">
                 {t.footer.tagline}
