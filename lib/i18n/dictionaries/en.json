@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "title": "Latin & Caribbean Soul — Hilton For the Stay | CALA Group Offer",
+    "description": "Where group travel becomes unforgettable. A group offer across CALA — culture, flavor and celebration with a 5% credit and curated experiences."
+  },
+  "nav": {
+    "requestProposal": "Request a Proposal"
+  },
+  "hero": {
+    "eyebrow": "Hilton — For the Stay",
+    "h1": "Where group travel becomes unforgettable",
+    "subtitle": "Latin & Caribbean Soul · Culture. Flavor. Celebration.",
+    "intro": "Today's group planners are looking for more than room blocks and rates — they want memorable experiences, operational simplicity, and added value that helps them deliver exceptional programs.",
+    "cta": "Request a Proposal"
+  },
+  "offer": {
+    "eyebrow": "The Offer",
+    "title": "5% Credit",
+    "lead": "A flexible, value-added benefit calculated on net room revenue, designed to enhance the guest experience through curated resort activities and experiences.",
+    "body": "Combined with exclusive group benefits, it helps planners create richer programs while delivering greater value for every stay."
+  },
+  "benefits": {
+    "eyebrow": "Included Group Benefits",
+    "title": "Elevate every program",
+    "subtitle": "Authentic experiences. Memorable moments. One region full of possibilities.",
+    "tagline": "One region full of possibilities.",
+    "items": [
+      {
+        "title": "Experience Credit",
+        "body": "A fixed credit redeemable on qualifying resort experiences, helping guests enjoy more of the destination."
+      },
+      {
+        "title": "VIP Amenities",
+        "body": "One VIP welcome amenity for every 15 paid rooms."
+      },
+      {
+        "title": "Complimentary Upgrades",
+        "body": "One confirmed room upgrade for every 10 paid rooms, subject to availability."
+      },
+      {
+        "title": "Seamless Arrivals",
+        "body": "Dedicated group check-in or pre-arrival key preparation for a smoother guest experience."
+      },
+      {
+        "title": "Experience Enhancements",
+        "body": "Choose one exclusive group benefit: a themed cocktail reception with hors d'oeuvres and house wine, or a late check-out day-use option for departure day."
+      }
+    ]
+  },
+  "perfectFor": {
+    "eyebrow": "Perfect For",
+    "title": "Built for every kind of group",
+    "items": [
+      "Weddings",
+      "Incentive Groups",
+      "Leisure Groups",
+      "Social Celebrations",
+      "Seasonal Buyouts"
+    ]
+  },
+  "concepts": {
+    "eyebrow": "Featured Experience Concepts",
+    "title": "Bring the spirit of the region to life",
+    "subtitle": "Immersive group experiences inspired by Latin America and the Caribbean's culture, flavor and celebration.",
+    "items": [
+      "BBQ Under the Stars",
+      "Día de los Muertos Celebration",
+      "Dinner in the Rainforest",
+      "Latin Dancing Lessons",
+      "Seafood Festival",
+      "Caribbean Carnival",
+      "Acoustic Vibes"
+    ]
+  },
+  "why": {
+    "eyebrow": "Why Planners Love It",
+    "title": "Value for you. Magic for your clients.",
+    "plannerTitle": "For the planner",
+    "planner": [
+      "Simple contracting process",
+      "Predictable group terms",
+      "Protected inventory",
+      "Faster response times"
+    ],
+    "clientTitle": "For the end client",
+    "client": [
+      "Added value without added complexity",
+      "Memorable experiences that help sell the destination"
+    ]
+  },
+  "program": {
+    "eyebrow": "Program Details",
+    "title": "The essentials",
+    "items": [
+      { "label": "Minimum Room Commitment", "value": "20 rooms", "note": "on peak night" },
+      { "label": "Minimum Length of Stay", "value": "3 nights", "note": "to qualify for Experience Credit" },
+      { "label": "Eligible Rate Type", "value": "BAR", "note": "or Package Group Rate" },
+      { "label": "Complimentary Leader Benefit", "value": "1 room", "note": "per 25 paid rooms" }
+    ]
+  },
+  "properties": {
+    "eyebrow": "Properties",
+    "title": "Where it comes to life",
+    "items": [
+      { "name": "Waldorf Astoria Riviera Maya", "location": "Riviera Maya, México" },
+      { "name": "Conrad Tulum Riviera Maya", "location": "Tulum, México" }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Request a Proposal",
+    "title": "Let's design your next unforgettable group program",
+    "body": "Designed to help you win more group business while delivering unforgettable guest experiences. Tell us about your group and we'll prepare a tailored proposal.",
+    "cta": "Request a Proposal"
+  },
+  "footer": {
+    "tagline": "One region full of possibilities.",
+    "disclaimer": "Latin & Caribbean Soul — a group offer for Hilton properties across CALA. Hilton, For the Stay, Waldorf Astoria and Conrad are trademarks of Hilton; used here for reference only.",
+    "photoCredit": "Imagery from the Hilton For the Stay campaign deck."
+  },
+  "mail": {
+    "subject": "Request a proposal — Latin & Caribbean Soul",
+    "body": "Hi,\n\nI'd like to request a proposal for the Latin & Caribbean Soul group offer.\n\nGroup type:\nProperty of interest:\nEstimated room nights:\nPreferred dates:\n\nThank you."
+  }
+}

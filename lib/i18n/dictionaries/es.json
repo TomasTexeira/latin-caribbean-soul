@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "title": "Latin & Caribbean Soul — Hilton For the Stay | Oferta de Grupos CALA",
+    "description": "Donde los viajes grupales se vuelven inolvidables. Una oferta de grupos en CALA — cultura, sabor y celebración con un 5% de crédito y experiencias curadas."
+  },
+  "nav": {
+    "requestProposal": "Solicitar propuesta"
+  },
+  "hero": {
+    "eyebrow": "Hilton — For the Stay",
+    "h1": "Donde los viajes grupales se vuelven inolvidables",
+    "subtitle": "Latin & Caribbean Soul · Cultura. Sabor. Celebración.",
+    "intro": "Hoy los planners de grupos buscan mucho más que bloques de habitaciones y tarifas: quieren experiencias memorables, simplicidad operativa y un valor agregado que les permita ofrecer programas excepcionales.",
+    "cta": "Solicitar propuesta"
+  },
+  "offer": {
+    "eyebrow": "La oferta",
+    "title": "5% de crédito",
+    "lead": "Un beneficio flexible de valor agregado, calculado sobre el ingreso neto de habitaciones, diseñado para enriquecer la experiencia del huésped a través de actividades y experiencias curadas del resort.",
+    "body": "Combinado con beneficios exclusivos para grupos, ayuda a los planners a crear programas más ricos mientras entregan mayor valor en cada estadía."
+  },
+  "benefits": {
+    "eyebrow": "Beneficios incluidos para grupos",
+    "title": "Eleva cada programa",
+    "subtitle": "Experiencias auténticas. Momentos memorables. Una región llena de posibilidades.",
+    "tagline": "Una región llena de posibilidades.",
+    "items": [
+      {
+        "title": "Crédito de experiencias",
+        "body": "Un crédito fijo canjeable en experiencias del resort que califican, para que los huéspedes disfruten más del destino."
+      },
+      {
+        "title": "Amenities VIP",
+        "body": "Una amenity de bienvenida VIP por cada 15 habitaciones pagas."
+      },
+      {
+        "title": "Upgrades de cortesía",
+        "body": "Un upgrade de habitación confirmado por cada 10 habitaciones pagas, sujeto a disponibilidad."
+      },
+      {
+        "title": "Llegadas sin fricción",
+        "body": "Check-in grupal dedicado o preparación anticipada de llaves para una llegada más fluida."
+      },
+      {
+        "title": "Realces de experiencia",
+        "body": "Elige un beneficio grupal exclusivo: un cóctel temático con hors d'oeuvres y vino de la casa, o late check-out con day-use para el día de salida."
+      }
+    ]
+  },
+  "perfectFor": {
+    "eyebrow": "Ideal para",
+    "title": "Pensado para cada tipo de grupo",
+    "items": [
+      "Bodas",
+      "Incentivos corporativos",
+      "Grupos de placer",
+      "Celebraciones",
+      "Buyouts de temporada"
+    ]
+  },
+  "concepts": {
+    "eyebrow": "Experiencias destacadas",
+    "title": "Dale vida al espíritu de la región",
+    "subtitle": "Experiencias grupales inmersivas inspiradas en la cultura, el sabor y la celebración de Latinoamérica y el Caribe.",
+    "items": [
+      "BBQ bajo las estrellas",
+      "Celebración de Día de los Muertos",
+      "Cena en la selva",
+      "Clases de baile latino",
+      "Festival de mariscos",
+      "Carnaval caribeño",
+      "Acoustic Vibes"
+    ]
+  },
+  "why": {
+    "eyebrow": "Por qué los planners la eligen",
+    "title": "Valor para ti. Magia para tus clientes.",
+    "plannerTitle": "Para el planner",
+    "planner": [
+      "Proceso de contratación simple",
+      "Términos de grupo predecibles",
+      "Inventario protegido",
+      "Tiempos de respuesta más rápidos"
+    ],
+    "clientTitle": "Para el cliente final",
+    "client": [
+      "Valor agregado sin complejidad agregada",
+      "Experiencias memorables que ayudan a vender el destino"
+    ]
+  },
+  "program": {
+    "eyebrow": "Detalles del programa",
+    "title": "Lo esencial",
+    "items": [
+      { "label": "Compromiso mínimo de habitaciones", "value": "20 hab.", "note": "en noche pico" },
+      { "label": "Estadía mínima", "value": "3 noches", "note": "para calificar al crédito de experiencias" },
+      { "label": "Tipo de tarifa elegible", "value": "BAR", "note": "o tarifa de grupo con paquete" },
+      { "label": "Beneficio de cortesía para el líder", "value": "1 hab.", "note": "por cada 25 pagas" }
+    ]
+  },
+  "properties": {
+    "eyebrow": "Propiedades",
+    "title": "Donde todo cobra vida",
+    "items": [
+      { "name": "Waldorf Astoria Riviera Maya", "location": "Riviera Maya, México" },
+      { "name": "Conrad Tulum Riviera Maya", "location": "Tulum, México" }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Solicitar propuesta",
+    "title": "Diseñemos tu próximo programa grupal inolvidable",
+    "body": "Diseñado para ayudarte a ganar más negocio de grupos mientras entregas experiencias inolvidables. Cuéntanos sobre tu grupo y preparamos una propuesta a medida.",
+    "cta": "Solicitar propuesta"
+  },
+  "footer": {
+    "tagline": "Una región llena de posibilidades.",
+    "disclaimer": "Latin & Caribbean Soul — una oferta de grupos para propiedades Hilton en CALA. Hilton, For the Stay, Waldorf Astoria y Conrad son marcas de Hilton; se usan aquí solo como referencia.",
+    "photoCredit": "Imágenes de la campaña Hilton For the Stay."
+  },
+  "mail": {
+    "subject": "Solicitar propuesta — Latin & Caribbean Soul",
+    "body": "Hola,\n\nQuisiera solicitar una propuesta para la oferta de grupos Latin & Caribbean Soul.\n\nTipo de grupo:\nPropiedad de interés:\nNoches de habitación estimadas:\nFechas preferidas:\n\nGracias."
+  }
+}
