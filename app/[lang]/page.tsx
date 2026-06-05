@@ -5,8 +5,17 @@ import LanguageSwitcher from "@/app/components/LanguageSwitcher";
 
 const CONTACT_EMAIL = "xavier@placeholder.com";
 
-const HERO_IMG = "/images/property-or-experience.png"; // BBQ Under the Stars
+const HERO_IMG = "/images/lifestyle/infinity-pool-sunset.jpg"; // cinematic sunset
 const CONTACT_IMG = "/images/property-or-experience-2.png"; // Conrad wedding, sunset
+
+// Perfect For index -> background image
+const PERFECT_FOR_IMAGES: string[] = [
+  "/images/lifestyle/pool-cabana.jpg", // Weddings
+  "/images/lifestyle/resort-entrance.jpg", // Incentive Groups
+  "/images/lifestyle/beach-running.jpg", // Leisure Groups
+  "/images/lifestyle/family-pool.jpg", // Social Celebrations
+  "/images/lifestyle/resort-aerial.jpg", // Seasonal Buyouts
+];
 
 // Concept index -> image (null = navy editorial block)
 const CONCEPT_IMAGES: (string | null)[] = [
@@ -20,7 +29,7 @@ const CONCEPT_IMAGES: (string | null)[] = [
 ];
 
 const PROPERTY_IMAGES: (string | null)[] = [
-  null, // Waldorf Astoria — no campaign photo available
+  "/images/lifestyle/resort-aerial.jpg", // Waldorf Astoria — resort aerial
   "/images/conrad-tulum.png", // Conrad Tulum
 ];
 
@@ -191,13 +200,23 @@ export default async function Home({
               {t.perfectFor.title}
             </h2>
           </div>
-          <ul className="mt-14 grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-hairline bg-hairline md:grid-cols-5">
-            {t.perfectFor.items.map((item) => (
+          <ul className="mt-14 grid grid-cols-2 gap-5 md:grid-cols-5">
+            {t.perfectFor.items.map((item, i) => (
               <li
                 key={item}
-                className="flex min-h-32 items-center justify-center bg-white px-4 py-8 text-center font-serif text-xl text-navy transition-colors hover:bg-background"
+                className="group relative flex min-h-44 items-end overflow-hidden rounded-2xl"
               >
-                {item}
+                <Image
+                  src={PERFECT_FOR_IMAGES[i]}
+                  alt={item}
+                  fill
+                  sizes="(max-width: 768px) 50vw, 20vw"
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-navy-deep/85 via-navy-deep/30 to-navy-deep/10" />
+                <span className="relative z-10 p-5 font-serif text-xl leading-tight text-white">
+                  {item}
+                </span>
               </li>
             ))}
           </ul>
@@ -301,6 +320,23 @@ export default async function Home({
                 ))}
               </ul>
             </div>
+          </div>
+        </section>
+
+        {/* Closing band */}
+        <section className="relative flex min-h-[60vh] items-center overflow-hidden">
+          <Image
+            src="/images/lifestyle/zemi-poolside.png"
+            alt=""
+            fill
+            sizes="100vw"
+            className="object-cover"
+          />
+          <div className="absolute inset-0 bg-navy-deep/55" />
+          <div className="relative z-10 mx-auto w-full max-w-6xl px-6 py-24 text-center sm:px-10">
+            <p className="mx-auto max-w-3xl font-serif text-4xl font-medium leading-tight text-white sm:text-6xl">
+              {t.footer.tagline}
+            </p>
           </div>
         </section>
 
