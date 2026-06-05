@@ -28,6 +28,13 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Safety net: never allow horizontal scroll at any viewport width. */
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
